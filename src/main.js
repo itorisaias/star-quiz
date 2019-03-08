@@ -2,7 +2,6 @@ import Vue from 'vue'
 
 import './utils/plugins'
 import './utils/filters'
-import './components/base'
 
 import App from './App.vue'
 import { createRouter } from './router'
