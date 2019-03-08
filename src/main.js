@@ -1,14 +1,18 @@
 import Vue from 'vue'
-import './plugins/vuetify'
-import './plugins/axios'
+
+import './utils/plugins'
+import './utils/filters'
+import './components/base'
+
 import App from './App.vue'
-import router from './router'
-import store from './store'
+import { createRouter } from './router'
+import { createStore } from './store'
 import './registerServiceWorker'
-import 'roboto-fontface/css/roboto/roboto-fontface.css'
-import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 Vue.config.productionTip = false
+
+const store = createStore()
+const router = createRouter()
 
 new Vue({
   router,
