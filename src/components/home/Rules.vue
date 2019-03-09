@@ -1,0 +1,10 @@
+<template>
+  <div>
+    <h1>Regras</h1>
+    <ul>
+      <li>Teste</li>
+      <li>Teste</li>
+      <li>Teste</li>
+    </ul>
+  </div>
+</template>
