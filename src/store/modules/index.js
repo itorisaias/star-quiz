@@ -1,9 +1,7 @@
-import players from './players'
-import characters from './characters'
 import quiz from './quiz'
+import characters from './characters'
 
 export default {
-  players,
-  characters,
-  quiz
+  quiz,
+  characters
 }
