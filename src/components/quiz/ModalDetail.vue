@@ -1,5 +1,5 @@
 <template>
-  <v-dialog persistent :value="character">
+  <v-dialog v-if="character" persistent :value="character">
     <v-card>
       <v-card-title>
         Detalhes sobre personagem
@@ -16,29 +16,33 @@
           <v-flex xs6>
             <ul>
               <li>
-                <strong>Specie: </strong> tal tal
+                <strong>Specie: </strong>
+                {{ character.species }}
               </li>
               <li>
-                <strong>Height: </strong> tal tal
+                <strong>Height: </strong>
+                {{ character.height }}
               </li>
               <li>
-                <strong>Hair: </strong> tal tal
+                <strong>Hair: </strong>
+                {{ character.hair_color }}
               </li>
               <li>
-                <strong>Planet: </strong> tal tal
+                <strong>Planet: </strong>
+                {{ character.homeworld }}
               </li>
             </ul>
           </v-flex>
           <v-flex xs12>
             <p>
               <strong>filmes: </strong>
-              {{ character }}
+              {{ character.films }}
             </p>
           </v-flex>
           <v-flex xs12>
             <p>
               <strong>veiculos: </strong>
-              tal tal, tal 1
+              {{ character.vehicles }}
             </p>
           </v-flex>
         </v-layout>
