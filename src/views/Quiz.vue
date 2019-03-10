@@ -1,13 +1,13 @@
 <template>
   <v-container>
-    <v-layout wrap text-xs-center>
+    <v-layout wrap text-xs-center >
       <v-flex hidden-sm-and-down sm6>
         <quiz-logo />
       </v-flex>
-      <v-flex text-sm-right xs12 sm6>
+      <v-flex text-md-right sm12 md6>
         <quiz-promodoro />
       </v-flex>
-      <v-flex xs12>
+      <v-flex md12 xl6 offset-xl3>
         <quiz-list />
         <quiz-modal-finish />
       </v-flex>
