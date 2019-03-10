@@ -6,6 +6,14 @@
       </v-card-title>
       <v-card-text>
         <h1>Fim do jogo XAU</h1>
+        <p>
+          <strong>Pontos:</strong>
+          {{ finalResult.totalPoints }}
+        </p>
+        <p>
+          <strong>Quantidade de Questoes respondidas:</strong>
+          {{ finalResult.countOfQuestion }}
+        </p>
       </v-card-text>
       <v-card-actions>
         <v-btn to="/ranking">OK</v-btn>
@@ -19,7 +27,7 @@ import { mapGetters } from 'vuex'
 
 export default {
   computed: {
-    ...mapGetters('quiz', ['time'])
+    ...mapGetters('quiz', ['time', 'finalResult'])
   }
 }
 </script>
