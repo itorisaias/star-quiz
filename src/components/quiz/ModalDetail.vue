@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-if="character" persistent :value="character">
+  <v-dialog v-if="person" persistent :value="person">
     <v-card>
       <v-card-title>
         Detalhes sobre personagem
@@ -11,38 +11,43 @@
       <v-card-text>
         <v-layout row wrap>
           <v-flex xs6>
-            <v-img :src="url" contain height="300" />
+            <v-img
+              :src="person.urlImg"
+              class="my-3"
+              contain
+              height="200"
+            />
           </v-flex>
           <v-flex xs6>
             <ul>
               <li>
                 <strong>Specie: </strong>
-                {{ character.species }}
+                {{ person.species }}
               </li>
               <li>
                 <strong>Height: </strong>
-                {{ character.height }}
+                {{ person.height }}
               </li>
               <li>
                 <strong>Hair: </strong>
-                {{ character.hair_color }}
+                {{ person.hair_color }}
               </li>
               <li>
                 <strong>Planet: </strong>
-                {{ character.homeworld }}
+                {{ person.homeworld }}
               </li>
             </ul>
           </v-flex>
           <v-flex xs12>
             <p>
               <strong>filmes: </strong>
-              {{ character.films }}
+              {{ person.films }}
             </p>
           </v-flex>
           <v-flex xs12>
             <p>
               <strong>veiculos: </strong>
-              {{ character.vehicles }}
+              {{ person.vehicles }}
             </p>
           </v-flex>
         </v-layout>
@@ -55,14 +60,13 @@
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
-  data: () => ({
-    url: 'https://cdn.icon-icons.com/icons2/1070/PNG/512/darth-vader_icon-icons.com_76959.png'
-  }),
   computed: {
-    ...mapGetters('characters', ['character'])
+    ...mapGetters('quiz', {
+      person: 'modalPersonHelp'
+    })
   },
   methods: {
-    ...mapActions('characters', ['closeDetail'])
+    ...mapActions('quiz', ['closeDetail'])
   }
 }
 </script>

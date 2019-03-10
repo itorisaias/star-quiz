@@ -1,0 +1,404 @@
+[
+    {
+        "name": "R5-D4",
+        "pathImg": "r5-d4.jpeg"
+    },
+    {
+        "name": "Biggs Darklighter",
+        "pathImg": "biggs-darklighter.jpeg"
+    },
+    {
+        "name": "Biggs Darklighter",
+        "pathImg": "biggs-darklighter.jpeg"
+    },
+    {
+        "name": "Anakin Skywalker",
+        "pathImg": "anakin-skywalker.jpg"
+    },
+    {
+        "name": "Palpatine",
+        "pathImg": "darth-sidious.jpeg"
+    },
+    {
+        "name": "Bossk",
+        "pathImg": "bossk.jpeg"
+    },
+    {
+        "name": "Lando Calrissian",
+        "pathImg": "ajudante-de-lando.jpeg"
+    },
+    {
+        "name": "Jek Tono Porkins",
+        "pathImg": "jek-tono-porkins.jpg"
+    },
+    {
+        "name": "Arvel Crynyd",
+        "pathImg": "arvel-crynyd.jpg"
+    },
+    {
+        "name": "Finis Valorum",
+        "pathImg": "finis-valorum.jpeg"
+    },
+    {
+        "name": "Roos Tarpals",
+        "pathImg": "roos-tarpals.jpeg"
+    },
+    {
+        "name": "Rugor Nass",
+        "pathImg": "rugor-nass.jpeg"
+    },
+    {
+        "name": "Ric Olié",
+        "pathImg": "ric-olie.jpeg"
+    },
+    {
+        "name": "Shmi Skywalker",
+        "pathImg": "shmi-skywalker.jpeg"
+    },
+    {
+        "name": "Bib Fortuna",
+        "pathImg": "bib-fortuna.jpeg"
+    },
+    {
+        "name": "Gasgano",
+        "pathImg": "gasgano.jpeg"
+    },
+    {
+        "name": "Ben Quadinaros",
+        "pathImg": "ben-quadinaros.jpeg"
+    },
+    {
+        "name": "Kit Fisto",
+        "pathImg": "kit-fisto.jpeg"
+    },
+    {
+        "name": "Tion Medon",
+        "pathImg": "tion-medon.jpeg"
+    },
+    {
+        "name": "Sly Moore",
+        "pathImg": "sly-moore.jpeg"
+    },
+    {
+        "name": "Raymus Antilles",
+        "pathImg": "raymus-antilles.png"
+    },
+    {
+        "name": "Tarfful",
+        "pathImg": "tarfful.jpeg"
+    },
+    {
+        "name": "Shaak Ti",
+        "pathImg": "shaak-ti.jpeg"
+    },
+    {
+        "name": "San Hill",
+        "pathImg": "san-hill.jpeg"
+    },
+    {
+        "name": "Wat Tambor",
+        "pathImg": "wat-tambor.jpeg"
+    },
+    {
+        "name": "R4-P17",
+        "pathImg": "r4-p17.jpeg"
+    },
+    {
+        "name": "Ratts Tyerell",
+        "pathImg": "ratts-tyerell.jpeg"
+    },
+    {
+        "name": "Jocasta Nu",
+        "pathImg": "jocasta-nu.jpeg"
+    },
+    {
+        "name": "Taun We",
+        "pathImg": "taun-we.jpeg"
+    },
+    {
+        "name": "Ratts TyLama Suerell",
+        "pathImg": "lama-su.jpeg"
+    },
+    {
+        "name": "Dexter Jettster",
+        "pathImg": "dexter-jettster.jpeg"
+    },
+    {
+        "name": "Zam Wesell",
+        "pathImg": "zam-wesell.jpeg"
+    },
+    {
+        "name": "Dormé",
+        "pathImg": "dorme.jpeg"
+    },
+    {
+        "name": "Barriss Offee",
+        "pathImg": "barriss-offee.jpeg"
+    },
+    {
+        "name": "Luminara Unduli",
+        "pathImg": "luminara-unduli.jpeg"
+    },
+    {
+        "name": "Poggle the Lesser",
+        "pathImg": "poggle-the-lesser.jpeg"
+    },
+    {
+        "name": "Cliegg Lars",
+        "pathImg": "cliegg-lars.jpeg"
+    },
+    {
+        "name": "Cordé",
+        "pathImg": "corde.jpeg"
+    },
+    {
+        "name": "Gregar Typho",
+        "pathImg": "gregar-typho.jpeg"
+    },
+    {
+        "name": "Mas Amedda",
+        "pathImg": "mas-amedda.jpeg"
+    },
+    {
+        "name": "Yarael Poof",
+        "pathImg": "yarael-poof.jpeg"
+    },
+    {
+        "name": "Saesee Tiin",
+        "pathImg": "saesee-tiin.jpeg"
+    },
+    {
+        "name": "Adi Gallia",
+        "pathImg": "adi-gallia.jpeg"
+    },
+    {
+        "name": "Eeth Koth",
+        "pathImg": "eeth-koth.jpeg"
+    },
+    {
+        "name": "Ayla Secura",
+        "pathImg": "aayla-secura.jpeg"
+    },
+    {
+        "name": "Owen Lars",
+        "pathImg": "owen-lars.jpeg"
+    },
+    {
+        "notFount": true,
+        "name": "general-hux",
+        "pathImg": "general-hux.jpeg"
+    },
+    {
+        "name": "Nien Nunb",
+        "pathImg": "nien-nunb.jpeg"
+    },
+    {
+        "name": "Lobot",
+        "pathImg": "ajudante-de-lando.jpeg"
+    },
+    {
+        "name": "Wilhuff Tarkin",
+        "pathImg": "grand-moff-tarkin.jpeg"
+    },
+    {
+        "name": "Nute Gunray",
+        "pathImg": "nute-gunray.jpeg"
+    },
+    {
+        "name": "Ackbar",
+        "pathImg": "almirante-ackbar.jpeg"
+    },
+    {
+        "name": "Greedo",
+        "pathImg": "greedo.jpeg"
+    },
+    {
+        "name": "Obi-Wan Kenobi",
+        "pathImg": "obi-wan-kenobi.jpeg"
+    },
+    {
+        "name": "Bail Prestor Organa",
+        "pathImg": "bail-organa.jpeg"
+    },
+    {
+        "name": "Han Solo",
+        "pathImg": "han-solo.jpeg"
+    },
+    {
+        "name": "Padmé Amidala",
+        "pathImg": "padme-amidala.jpeg"
+    },
+    {
+        "name": "BB8",
+        "pathImg": "bb-8.jpeg"
+    },
+    {
+        "name": "IG-88",
+        "pathImg": "ig-88.jpeg"
+    },
+    {
+        "name": "Plo Koon",
+        "pathImg": "plo-koon.jpeg"
+    },
+    {
+        "name": "Beru Whitesun lars",
+        "pathImg": "beru-lars.jpeg"
+    },
+    {
+        "name": "Jabba Desilijic Tiure",
+        "pathImg": "jabba-the-hutt.jpeg"
+    },
+    {
+        "name": "Poe Dameron",
+        "pathImg": "poe-dameron.jpeg"
+    },
+    {
+        "name": "Boba Fett",
+        "pathImg": "boba-fett.jpeg"
+    },
+    {
+        "name": "Jango Fett",
+        "pathImg": "jango-fett.jpeg"
+    },
+    {
+        "name": "Qui-Gon Jinn",
+        "pathImg": "qui-gon-jinn.jpeg"
+    },
+    {
+        "name": "C-3PO",
+        "pathImg": "c-3po.jpeg"
+    },
+    {
+        "name": "Jar Jar Binks",
+        "pathImg": "jar-jar-binks.jpeg"
+    },
+    {
+        "name": "R2-D2",
+        "pathImg": "r2-d2.jpeg"
+    },
+    {
+        "name": "Quarsh Panaka",
+        "pathImg": "quarsh-panaka.jpeg"
+    },
+    {
+        "name": "Dud Bolt",
+        "pathImg": "dud-bolt.jpeg"
+    },
+    {
+        "name": "Lama Su",
+        "pathImg": "lama-su.jpeg"
+    },
+    {
+        "name": "Captain Phasma",
+        "pathImg": "capita-phasma.jpeg"
+    },
+    {
+        "name": "Ki-Adi-Mundi",
+        "pathImg": "ki-adi-mundi.jpeg"
+    },
+    {
+        "name": "Rey",
+        "pathImg": "rey.jpeg"
+    },
+    {
+        "name": "Chewbacca",
+        "pathImg": "chewbacca.jpeg"
+    },
+    {
+        "notFount": true,
+        "name": "kylo-ren",
+        "pathImg": "kylo-ren.jpeg"
+    },
+    {
+        "notFount": true,
+        "name": "rose-tico",
+        "pathImg": "rose-tico.jpeg"
+    },
+    {
+        "name": "Dooku",
+        "pathImg": "conde-dooku.jpeg"
+    },
+    {
+        "notFount": true,
+        "name": "lando-calrissian",
+        "pathImg": "lando-calrissian.jpeg"
+    },
+    {
+        "name": "Sebulba",
+        "pathImg": "sebulba.jpeg"
+    },
+    {
+        "name": "Darth Maul",
+        "pathImg": "darth-maul.jpeg"
+    },
+    {
+        "name": "Leia Organa",
+        "pathImg": "leia-organa.jpeg"
+    },
+    {
+        "name": "Shmi Skywalker",
+        "pathImg": "shmi-skywalker.jpeg"
+    },
+    {
+        "name": "darth-sidious",
+        "pathImg": "darth-sidious.jpeg"
+    },
+    {
+        "name": "lider-supremo-snoke",
+        "pathImg": "lider-supremo-snoke.jpeg"
+    },
+    {
+        "name": "wampa",
+        "pathImg": "wampa.jpeg"
+    },
+    {
+        "name": "Darth Vader",
+        "pathImg": "darth-vader.jpeg"
+    },
+    {
+        "name": "Luke Skywalker",
+        "pathImg": "luke-skywalker.jpeg"
+    },
+    {
+        "name": "Watto",
+        "pathImg": "watto.jpeg"
+    },
+    {
+        "notFount": true,
+        "name": "dengar",
+        "pathImg": "dengar.jpeg"
+    },
+    {
+        "name": "Mace Windu",
+        "pathImg": "mace-windu.jpeg"
+    },
+    {
+        "name": "Wedge Antilles",
+        "pathImg": "wedge-antilles.jpeg"
+    },
+    {
+        "name": "Finn",
+        "pathImg": "finn.jpeg"
+    },
+    {
+        "notFount": true,
+        "name": "maz-kanata",
+        "pathImg": "maz-kanata.jpeg"
+    },
+    {
+        "name": "Wicket Systri Warrick",
+        "pathImg": "wicket-w-warrick.jpeg"
+    },
+    {
+        "name": "Grievous",
+        "pathImg": "general-grievous.jpeg"
+    },
+    {
+        "name": "Mon Mothma",
+        "pathImg": "mon-mothma.jpeg"
+    },
+    {
+        "name": "Yoda",
+        "pathImg": "yoda.jpeg"
+    }
+]
