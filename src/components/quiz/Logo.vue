@@ -2,7 +2,7 @@
   <v-container>
     <v-layout>
       <v-flex>
-        <v-img src="https://cdn.icon-icons.com/icons2/1070/PNG/512/darth-vader_icon-icons.com_76959.png" />
+        <v-img src="https://pngimage.net/wp-content/uploads/2018/06/star-wars-icons-png-6.png" />
       </v-flex>
       <v-flex>
         <h1>Star Quiz</h1>
