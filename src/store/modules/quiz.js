@@ -21,6 +21,7 @@ const mutations = {
   setModalPersonHelp: (state, payload) => (state.modalPersonHelp = payload),
   setFinalResult: (state, payload) => (state.finalResult = payload)
 }
+
 const actions = {
   startQuiz ({ commit, rootState }) {
     const peopleJson = require('@/data/people.json')
@@ -33,13 +34,14 @@ const actions = {
       let urlImg = peopleJson.find(personJson => personJson.name === person.name)
 
       if (urlImg) {
-        urlImg = require(`@/assets/characters/${urlImg.pathImg}`)
+        urlImg = require(`@/assets/images/${urlImg.pathImg}`)
       } else {
         console.log(person.name)
       }
 
       return ({ ...person, points, answer, urlImg, rightAnswer })
     }))
+    commit('setModalPersonHelp', null)
     commit('setPagination', { page: 1, limit: 8 })
   },
   bootTime ({ commit }, { time, timeId }) {
@@ -56,8 +58,6 @@ const actions = {
       countOfQuestion: questionsAnsweredCorrectly.length
     })
     commit('setTimeId', null)
-
-    // TODO: logica de finalização
   },
   paginationQuestion ({ commit }, { page = 1, limit = 8 }) {
     commit('setPagination', { page, limit })
@@ -75,6 +75,22 @@ const actions = {
   },
   closeDetail ({ commit }) {
     commit('setModalPersonHelp', null)
+  },
+  response ({ commit, state }, { answer, person }) {
+    commit('setQuestions', state.questions.map(question => {
+      if (question.name === person.name) {
+        question = { ...question, answer }
+
+        if (!answer) {
+          question = { ...question, rightAnswer: null }
+        } else if (answer.toLowerCase().trim() === person.name.toLowerCase()) {
+          question = { ...question, rightAnswer: true }
+        } else {
+          question = { ...question, rightAnswer: false }
+        }
+      }
+      return { ...question }
+    }))
   }
 }
 
