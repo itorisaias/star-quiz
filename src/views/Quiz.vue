@@ -9,6 +9,7 @@
       </v-flex>
       <v-flex xs12>
         <quiz-list />
+        <quiz-modal-finish />
       </v-flex>
       <v-flex xs12>
         <pagination :length="countPage" @paginate="onPaginate" />
@@ -25,7 +26,8 @@ export default {
     Pagination: () => import('@/components/Pagination'),
     QuizLogo: () => import('@/components/quiz/Logo'),
     QuizList: () => import('@/components/quiz/List'),
-    QuizPromodoro: () => import('@/components/quiz/Promodoro')
+    QuizPromodoro: () => import('@/components/quiz/Promodoro'),
+    QuizModalFinish: () => import('@/components/quiz/ModalFinish')
   },
   methods: {
     onPaginate (event) {
@@ -40,9 +42,7 @@ export default {
     }
   },
   created () {
-    // TODO: Iniciar o Quiz
-    // FIXME: Remover load daqui e colocar load dos objetos restantes
-    this.$store.dispatch('characters/loadCharacters')
+    this.$store.dispatch('quiz/startQuiz')
   }
 }
 </script>
