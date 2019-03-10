@@ -16,6 +16,11 @@ export const routes = [
     component: () => import('@/views/Quiz.vue')
   },
   {
+    path: '/ranking',
+    name: 'Ranking',
+    component: () => import('@/views/Ranking.vue')
+  },
+  {
     path: '**',
     redirect: '/'
   }
