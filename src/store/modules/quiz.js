@@ -6,6 +6,10 @@ const state = {
   pagination: {
     page: 0,
     limit: 0
+  },
+  finalResult: {
+    totalPoints: 0,
+    countOfQuestion: 0
   }
 }
 
@@ -14,7 +18,8 @@ const mutations = {
   setTimeId: (state, payload) => (state.timeId = payload),
   setQuestions: (state, payload) => (state.questions = payload),
   setPagination: (state, payload) => (state.pagination = payload),
-  setModalPersonHelp: (state, payload) => (state.modalPersonHelp = payload)
+  setModalPersonHelp: (state, payload) => (state.modalPersonHelp = payload),
+  setFinalResult: (state, payload) => (state.finalResult = payload)
 }
 const actions = {
   startQuiz ({ commit, rootState }) {
@@ -43,7 +48,15 @@ const actions = {
   },
   finishQuiz ({ state, commit }) {
     clearInterval(state.timeId)
+    const questionsAnsweredCorrectly = state.questions.filter(question => question.rightAnswer)
+    const totalPoints = questionsAnsweredCorrectly.reduce((total, current) => (total + (+current.points)), 0)
+
+    commit('setFinalResult', {
+      totalPoints,
+      countOfQuestion: questionsAnsweredCorrectly.length
+    })
     commit('setTimeId', null)
+
     // TODO: logica de finalização
   },
   paginationQuestion ({ commit }, { page = 1, limit = 8 }) {
@@ -69,6 +82,7 @@ const getters = {
   time: (state) => (state.time),
   pagination: (state) => (state.pagination),
   modalPersonHelp: (state) => (state.modalPersonHelp),
+  finalResult: (state) => (state.finalResult),
   questions: (state) => {
     const { page, limit } = state.pagination
 
