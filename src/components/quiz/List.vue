@@ -1,8 +1,8 @@
 <template>
   <v-container fluid grid-list-xl>
     <v-layout row wrap>
-      <v-flex v-for="(character, index) in characters" :key="index" xs6 sm3>
-        <quiz-card :character="character" />
+      <v-flex v-for="(people, index) in questions" :key="index" xs6 sm3>
+        <quiz-card :person="people" />
       </v-flex>
     </v-layout>
 
@@ -19,7 +19,7 @@ export default {
     QuizModalDetail: () => import('./ModalDetail')
   },
   computed: {
-    ...mapGetters('characters', ['characters'])
+    ...mapGetters('quiz', ['questions'])
   }
 }
 </script>
