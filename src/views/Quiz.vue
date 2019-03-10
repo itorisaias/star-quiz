@@ -12,14 +12,14 @@
         <quiz-modal-finish />
       </v-flex>
       <v-flex xs12>
-        <pagination :length="countPage" @paginate="onPaginate" />
+        <pagination :length="countPage" @paginate="paginationQuestion({ page: $event })" />
       </v-flex>
     </v-layout>
   </v-container>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   components: {
@@ -30,19 +30,16 @@ export default {
     QuizModalFinish: () => import('@/components/quiz/ModalFinish')
   },
   methods: {
-    onPaginate (event) {
-      // TODO: alterar estado da paginação
-      console.log(event)
-    }
-  },
-  computed: {
-    ...mapGetters('characters', ['countCharacter']),
-    countPage () {
-      return Math.ceil(this.countCharacter / 8)
-    }
+    ...mapActions('quiz', ['paginationQuestion', 'startQuiz'])
   },
   created () {
-    this.$store.dispatch('quiz/startQuiz')
+    this.startQuiz()
+  },
+  computed: {
+    ...mapGetters(['peopleList']),
+    countPage () {
+      return Math.ceil(this.peopleList.length / 8)
+    }
   }
 }
 </script>
