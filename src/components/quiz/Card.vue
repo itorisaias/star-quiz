@@ -1,6 +1,10 @@
 <template>
-  <v-card :color="colorCard" :title="character.name">
-    <v-img :src="url" style="background-color: white" />
+  <v-card :color="colorCard" :title="person.name">
+    <v-img
+      :src="person.urlImg"
+      style="background-color: white"
+      height="200"
+    />
     <!-- FIXME: Remover title, apenas para teste -->
     <v-card-actions>
       <v-text-field
@@ -8,9 +12,8 @@
         color="black"
         label="Nome"
         append-outer-icon="help_outline"
-        @click:append-outer="showDetail(character)"
+        @click:append-outer="showDetail(person)"
         clearable
-        @blur="response({ character, answer })"
       />
     </v-card-actions>
   </v-card>
@@ -21,12 +24,11 @@ import { mapActions } from 'vuex'
 
 export default {
   data: () => ({
-    url: 'https://cdn.icon-icons.com/icons2/1070/PNG/512/darth-vader_icon-icons.com_76959.png',
     answer: null
   }),
   computed: {
     colorCard () {
-      switch (this.character.rightAnswer) {
+      switch (this.person.rightAnswer) {
         case true:
           return 'success'
         case false:
@@ -37,7 +39,7 @@ export default {
     }
   },
   props: {
-    character: {
+    person: {
       type: Object,
       required: true,
       validator (value) {
@@ -47,7 +49,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions('characters', ['showDetail', 'response'])
+    ...mapActions('quiz', ['showDetail'])
   }
 }
 </script>
