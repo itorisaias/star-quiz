@@ -1,11 +1,10 @@
 <template>
-  <v-card :color="colorCard" :title="person.name">
+  <v-card :color="colorCard">
     <v-img
       :src="person.urlImg"
       style="background-color: white"
       height="200"
     />
-    <!-- FIXME: Remover title, apenas para teste -->
     <v-card-actions>
       <v-text-field
         v-model="answer"
@@ -14,6 +13,7 @@
         append-outer-icon="help_outline"
         @click:append-outer="showDetail(person)"
         clearable
+        @blur="response({ answer, person })"
       />
     </v-card-actions>
   </v-card>
@@ -21,7 +21,7 @@
 
 <script>
 import { mapActions } from 'vuex'
-
+// TODO: preciso verifica como foi tratar a variavel answer pq valor está se duplicando
 export default {
   data: () => ({
     answer: null
@@ -41,15 +41,11 @@ export default {
   props: {
     person: {
       type: Object,
-      required: true,
-      validator (value) {
-        // TODO: verificar se formato está correto, e iniciar busca de sub dados
-        return true
-      }
+      required: true
     }
   },
   methods: {
-    ...mapActions('quiz', ['showDetail'])
+    ...mapActions('quiz', ['showDetail', 'response'])
   }
 }
 </script>
