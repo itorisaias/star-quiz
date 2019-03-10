@@ -1,38 +1,33 @@
 <template>
-  <span :class="textColor">{{ timeout | timestemp }}</span>
+  <h1 :class="textColor">{{ time | timestemp }}</h1>
 </template>
 
 <script>
 import {
   mapGetters,
-  mapActions,
-  mapMutations
+  mapActions
 } from 'vuex'
 
 export default {
   created () {
-    // TODO: Iniciar o promodo
-    // const timeout = 120
-    // const timeID = setInterval(() => this.countdown(), 1000)
-    // this.startQuiz({ timeout, timeID })
+    const time = 120
+    const timeId = setInterval(() => this.countdown(), 1000)
+    this.bootTime({ time, timeId })
   },
   methods: {
-    ...mapActions('quiz', ['startQuiz', 'resetQuiz']),
-    ...mapMutations('quiz', ['setTimeout']),
+    ...mapActions('quiz', ['bootTime', 'finishQuiz']),
     countdown () {
-      const { timeout } = this.$store.state.quiz
-      if (timeout >= 1) {
-        this.setTimeout(timeout - 1)
+      if (this.time >= 1) {
+        this.$store.commit('quiz/setTime', (this.time - 1))
       } else {
-        this.setTimeout(0)
-        this.resetQuiz()
+        this.finishQuiz()
       }
     }
   },
   computed: {
-    ...mapGetters('quiz', ['timeout']),
+    ...mapGetters('quiz', ['time']),
     textColor () {
-      return this.timeout <= 10 ? 'red--text' : 'blue--text'
+      return this.time <= 10 ? 'red--text' : 'blue--text'
     }
   },
   filters: {
