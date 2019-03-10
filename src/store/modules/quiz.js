@@ -49,9 +49,16 @@ const actions = {
   paginationQuestion ({ commit }, { page = 1, limit = 8 }) {
     commit('setPagination', { page, limit })
   },
-  showDetail ({ commit }, person) {
+  showDetail ({ commit, state }, person) {
     commit('setModalPersonHelp', person)
-    // TODO: alterar pontuação da question
+
+    commit('setQuestions', state.questions.map(question => {
+      if (question.name === person.name) {
+        return { ...question, points: 5 }
+      }
+
+      return { ...question }
+    }))
   },
   closeDetail ({ commit }) {
     commit('setModalPersonHelp', null)
