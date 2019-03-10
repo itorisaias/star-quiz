@@ -1,0 +1,392 @@
+[
+    {
+        "name": "R5-D4",
+        "pathImg": "@/assets/characters/r5-d4.jpeg"
+    },
+    {
+        "name": "Biggs Darklighter",
+        "pathImg": "@/assets/characters/biggs-darklighter.jpeg"
+    },
+    {
+        "name": "Biggs Darklighter",
+        "pathImg": "@/assets/characters/biggs-darklighter.jpeg"
+    },
+    {
+        "name": "Anakin Skywalker",
+        "pathImg": "@/assets/characters/anakin-skywalker.jpeg"
+    },
+    {
+        "name": "Palpatine",
+        "pathImg": "@/assets/characters/darth-sidious.jpeg"
+    },
+    {
+        "name": "Bossk",
+        "pathImg": "@/assets/characters/bossk.jpeg"
+    },
+    {
+        "name": "Lando Calrissian",
+        "pathImg": "@/assets/characters/ajudante-de-lando.jpeg"
+    },
+    {
+        "name": "Jek Tono Porkins",
+        "pathImg": "@/assets/characters/jek-tono-porkins.jpg"
+    },
+    {
+        "name": "Arvel Crynyd",
+        "pathImg": "@/assets/characters/arvel-crynyd.jpg"
+    },
+    {
+        "name": "Finis Valorum",
+        "pathImg": "@/assets/characters/finis-valorum.jpeg"
+    },
+    {
+        "name": "Roos Tarpals",
+        "pathImg": "@/assets/characters/roos-tarpals.jpeg"
+    },
+    {
+        "name": "Rugor Nass",
+        "pathImg": "@/assets/characters/rugor-nass.jpeg"
+    },
+    {
+        "name": "Ric Olié",
+        "pathImg": "@/assets/characters/ric-olie.jpeg"
+    },
+    {
+        "name": "Shmi Skywalker",
+        "pathImg": "@/assets/characters/shmi-skywalker.jpeg.jpeg"
+    },
+    {
+        "name": "Bib Fortuna",
+        "pathImg": "@/assets/characters/bib-fortuna.jpeg"
+    },
+    {
+        "name": "Gasgano",
+        "pathImg": "@/assets/characters/gasgano.jpeg"
+    },
+    {
+        "name": "Ben Quadinaros",
+        "pathImg": "@/assets/characters/ben-quadinaros.jpeg"
+    },
+    {
+        "name": "Kit Fisto",
+        "pathImg": "@/assets/characters/kit-fisto.jpeg"
+    },
+    {
+        "name": "Tion Medon",
+        "pathImg": "@/assets/characters/tion-medon.jpeg"
+    },
+    {
+        "name": "Sly Moore",
+        "pathImg": "@/assets/characters/sly-moore.jpeg"
+    },
+    {
+        "name": "Raymus Antilles",
+        "pathImg": "@/assets/characters/raymus-antilles.png"
+    },
+    {
+        "name": "Tarfful",
+        "pathImg": "@/assets/characters/tarfful.jpeg"
+    },
+    {
+        "name": "Shaak Ti",
+        "pathImg": "@/assets/characters/shaak-ti.jpeg"
+    },
+    {
+        "name": "San Hill",
+        "pathImg": "@/assets/characters/san-hill.jpeg"
+    },
+    {
+        "name": "Wat Tambor",
+        "pathImg": "@/assets/characters/wat-tambor.jpeg"
+    },
+    {
+        "name": "R4-P17",
+        "pathImg": "@/assets/characters/r4-p17.jpeg"
+    },
+    {
+        "name": "Ratts Tyerell",
+        "pathImg": "@/assets/characters/ratts-tyerell.jpeg"
+    },
+    {
+        "name": "Jocasta Nu",
+        "pathImg": "@/assets/characters/jocasta-nu.jpeg"
+    },
+    {
+        "name": "Taun We",
+        "pathImg": "@/assets/characters/taun-we.jpeg"
+    },
+    {
+        "name": "Ratts TyLama Suerell",
+        "pathImg": "@/assets/characters/lama-su.jpeg"
+    },
+    {
+        "name": "Dexter Jettster",
+        "pathImg": "@/assets/characters/dexter-jettster.jpeg"
+    },
+    {
+        "name": "Zam Wesell",
+        "pathImg": "@/assets/characters/zam-wesell.jpeg"
+    },
+    {
+        "name": "Dormé",
+        "pathImg": "@/assets/characters/dorme.jpeg"
+    },
+    {
+        "name": "Barriss Offee",
+        "pathImg": "@/assets/characters/barriss-offee.jpeg"
+    },
+    {
+        "name": "Luminara Unduli",
+        "pathImg": "@/assets/characters/luminara-unduli.jpeg"
+    },
+    {
+        "name": "Poggle the Lesser",
+        "pathImg": "@/assets/characters/poggle-the-lesser.jpeg"
+    },
+    {
+        "name": "Cliegg Lars",
+        "pathImg": "@/assets/characters/cliegg-lars.jpeg"
+    },
+    {
+        "name": "Cordé",
+        "pathImg": "@/assets/characters/corde.jpeg"
+    },
+    {
+        "name": "Gregar Typho",
+        "pathImg": "@/assets/characters/gregar-typho.jpeg"
+    },
+    {
+        "name": "Mas Amedda",
+        "pathImg": "@/assets/characters/mas-amedda.jpeg"
+    },
+    {
+        "name": "Yarael Poof",
+        "pathImg": "@/assets/characters/yarael-poof.jpeg"
+    },
+    {
+        "name": "Saesee Tiin",
+        "pathImg": "@/assets/characters/saesee-tiin.jpeg"
+    },
+    {
+        "name": "Adi Gallia",
+        "pathImg": "@/assets/characters/adi-gallia.jpeg"
+    },
+    {
+        "name": "Eeth Koth",
+        "pathImg": "@/assets/characters/eeth-koth.jpeg"
+    },
+    {
+        "name": "Ayla Secura",
+        "pathImg": "@/assets/characters/aayla-secura.jpeg"
+    },
+    {
+        "name": "Owen Lars",
+        "pathImg": "@/assets/characters/owen-lars.jpeg"
+    },
+    {
+        "notFount": true,
+        "name": "general-hux",
+        "pathImg": "@/assets/characters/general-hux.jpeg"
+    },
+    {
+        "name": "Nien Nunb",
+        "pathImg": "@/assets/characters/nien-nunb.jpeg"
+    },
+    {
+        "name": "Lobot",
+        "pathImg": "@/assets/characters/ajudante-de-lando.jpeg"
+    },
+    {
+        "name": "Wilhuff Tarkin",
+        "pathImg": "@/assets/characters/grand-moff-tarkin.jpeg"
+    },
+    {
+        "name": "Nute Gunray",
+        "pathImg": "@/assets/characters/nute-gunray.jpeg"
+    },
+    {
+        "name": "Ackbar",
+        "pathImg": "@/assets/characters/almirante-ackbar.jpeg"
+    },
+    {
+        "name": "Greedo",
+        "pathImg": "@/assets/characters/greedo.jpeg"
+    },
+    {
+        "name": "Obi-Wan Kenobi",
+        "pathImg": "@/assets/characters/obi-wan-kenobi.jpeg"
+    },
+    {
+        "name": "Bail Prestor Organa",
+        "pathImg": "@/assets/characters/bail-organa.jpeg"
+    },
+    {
+        "name": "Han Solo",
+        "pathImg": "@/assets/characters/han-solo.jpeg"
+    },
+    {
+        "name": "Padmé Amidala",
+        "pathImg": "@/assets/characters/padme-amidala.jpeg"
+    },
+    {
+        "name": "BB8",
+        "pathImg": "@/assets/characters/bb-8.jpeg"
+    },
+    {
+        "name": "IG-88",
+        "pathImg": "@/assets/characters/ig-88.jpeg"
+    },
+    {
+        "name": "Plo Koon",
+        "pathImg": "@/assets/characters/plo-koon.jpeg"
+    },
+    {
+        "name": "Beru Whitesun lars",
+        "pathImg": "@/assets/characters/beru-lars.jpeg"
+    },
+    {
+        "name": "Jabba Desilijic Tiure",
+        "pathImg": "@/assets/characters/jabba-the-hutt.jpeg"
+    },
+    {
+        "name": "Poe Dameron",
+        "pathImg": "@/assets/characters/poe-dameron.jpeg"
+    },
+    {
+        "name": "Boba Fett",
+        "pathImg": "@/assets/characters/boba-fett.jpeg"
+    },
+    {
+        "name": "Jango Fett",
+        "pathImg": "@/assets/characters/jango-fett.jpeg"
+    },
+    {
+        "name": "Qui-Gon Jinn",
+        "pathImg": "@/assets/characters/qui-gon-jinn.jpeg"
+    },
+    {
+        "name": "C-3PO",
+        "pathImg": "@/assets/characters/c-3po.jpeg"
+    },
+    {
+        "name": "Jar Jar Binks",
+        "pathImg": "@/assets/characters/jar-jar-binks.jpeg"
+    },
+    {
+        "name": "R2-D2",
+        "pathImg": "@/assets/characters/r2-d2.jpeg"
+    },
+    {
+        "name": "Captain Phasma",
+        "pathImg": "@/assets/characters/capita-phasma.jpeg"
+    },
+    {
+        "name": "Ki-Adi-Mundi",
+        "pathImg": "@/assets/characters/ki-adi-mundi.jpeg"
+    },
+    {
+        "name": "Rey",
+        "pathImg": "@/assets/characters/rey.jpeg"
+    },
+    {
+        "name": "Chewbacca",
+        "pathImg": "@/assets/characters/chewbacca.jpeg"
+    },
+    {
+        "notFount": true,
+        "name": "kylo-ren",
+        "pathImg": "@/assets/characters/kylo-ren.jpeg"
+    },
+    {
+        "notFount": true,
+        "name": "rose-tico",
+        "pathImg": "@/assets/characters/rose-tico.jpeg"
+    },
+    {
+        "name": "Dooku",
+        "pathImg": "@/assets/characters/conde-dooku.jpeg"
+    },
+    {
+        "notFount": true,
+        "name": "lando-calrissian",
+        "pathImg": "@/assets/characters/lando-calrissian.jpeg"
+    },
+    {
+        "name": "Sebulba",
+        "pathImg": "@/assets/characters/sebulba.jpeg"
+    },
+    {
+        "name": "Darth Maul",
+        "pathImg": "@/assets/characters/darth-maul.jpeg"
+    },
+    {
+        "name": "Leia Organa",
+        "pathImg": "@/assets/characters/leia-organa.jpeg"
+    },
+    {
+        "name": "Shmi Skywalker",
+        "pathImg": "@/assets/characters/shmi-skywalker.jpeg"
+    },
+    {
+        "name": "darth-sidious",
+        "pathImg": "@/assets/characters/darth-sidious.jpeg"
+    },
+    {
+        "name": "lider-supremo-snoke",
+        "pathImg": "@/assets/characters/lider-supremo-snoke.jpeg"
+    },
+    {
+        "name": "wampa",
+        "pathImg": "@/assets/characters/wampa.jpeg"
+    },
+    {
+        "name": "Darth Vader",
+        "pathImg": "@/assets/characters/darth-vader.jpeg"
+    },
+    {
+        "name": "Luke Skywalker",
+        "pathImg": "@/assets/characters/luke-skywalker.jpeg"
+    },
+    {
+        "name": "Watto",
+        "pathImg": "@/assets/characters/watto.jpeg"
+    },
+    {
+        "notFount": true,
+        "name": "dengar",
+        "pathImg": "@/assets/characters/dengar.jpeg"
+    },
+    {
+        "name": "Mace Windu",
+        "pathImg": "@/assets/characters/mace-windu.jpeg"
+    },
+    {
+        "name": "Wedge Antilles",
+        "pathImg": "@/assets/characters/wedge-antilles.jpeg"
+    },
+    {
+        "name": "Finn",
+        "pathImg": "@/assets/characters/finn.jpeg"
+    },
+    {
+        "notFount": true,
+        "name": "maz-kanata",
+        "pathImg": "@/assets/characters/maz-kanata.jpeg"
+    },
+    {
+        "name": "Wicket Systri Warrick",
+        "pathImg": "@/assets/characters/wicket-w-warrick.jpeg"
+    },
+    {
+        "name": "Grievous",
+        "pathImg": "@/assets/characters/general-grievous.jpeg"
+    },
+    {
+        "name": "Mon Mothma",
+        "pathImg": "@/assets/characters/mon-mothma.jpeg"
+    },
+    {
+        "name": "Yoda",
+        "pathImg": "@/assets/characters/yoda.jpeg"
+    }
+]
