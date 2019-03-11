@@ -7,7 +7,8 @@
     />
     <v-card-actions>
       <v-text-field
-        v-model="answer"
+        :disabled="(person.answer ? true : false)"
+        v-model="_answer"
         color="black"
         placeholder="Quem sou eu ?"
         clearable
@@ -23,7 +24,6 @@
 
 <script>
 import { mapActions } from 'vuex'
-// TODO: preciso verifica como foi tratar a variavel answer pq valor está se duplicando
 export default {
   data: () => ({
     answer: null
@@ -38,6 +38,19 @@ export default {
         default:
           return null
       }
+    },
+    _answer: {
+      get () {
+        if (this.person.answer) {
+          this.clearAnswer()
+          return this.person.answer
+        }
+
+        return this.answer
+      },
+      set (v) {
+        this.answer = v
+      }
     }
   },
   props: {
@@ -47,7 +60,10 @@ export default {
     }
   },
   methods: {
-    ...mapActions('quiz', ['showDetail', 'response'])
+    ...mapActions('quiz', ['showDetail', 'response']),
+    clearAnswer () {
+      this.answer = null
+    }
   }
 }
 </script>
