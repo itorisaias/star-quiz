@@ -36,9 +36,9 @@ export default {
     this.startQuiz()
   },
   computed: {
-    ...mapGetters(['peopleList']),
+    ...mapGetters(['people']),
     countPage () {
-      return Math.ceil(this.peopleList.length / 8)
+      return Math.ceil(this.people.length / 8)
     }
   }
 }
