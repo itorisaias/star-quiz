@@ -1,12 +1,10 @@
 import Vue from 'vue'
 import { mount } from '@vue/test-utils'
-import {
-  Plugin as VuetifyPlugin,
-  options
-} from '@/utils/plugins/vuetify'
+import Vuetify from 'vuetify'
 
 describe('Teste Page About', function () {
-  Vue.use(VuetifyPlugin, options)
+  Vue.use(Vuetify)
+
   const wrapper = mount(Vue.component('VuetifyPluginTeste', {
     template: `
       <v-app dark>
