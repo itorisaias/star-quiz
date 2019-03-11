@@ -1,13 +1,15 @@
 <template>
-  <v-card>
+  <v-container>
+    <v-card>
 
-    <ranking-title />
+      <ranking-title />
 
-    <ranking-table />
+      <ranking-table />
 
-    <ranking-actions />
+      <ranking-actions />
 
-  </v-card>
+    </v-card>
+  </v-container>
 </template>
 
 <script>
