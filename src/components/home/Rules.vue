@@ -18,9 +18,10 @@ export default {
   data: () => ({
     rules: [
       'Você terá dois minutos para acertar o maior número de personagens;',
-      'Você pode errar quantas vezes quise;',
       'Respostas corretas sem auxílio de consulta, vale 10 pontos;',
-      'Respostas corretas com auxílio de consulta, vale 5 pontos.'
+      'Respostas corretas com auxílio de consulta, vale 5 pontos;',
+      'Não pode responder mais de uma vez ao mesmo personagem;',
+      'Erros não afetaram á pontuação final.'
     ]
   })
 }
