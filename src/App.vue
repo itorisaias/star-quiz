@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapGetters, mapMutations } from 'vuex'
 
 export default {
   name: 'App',
@@ -18,45 +18,40 @@ export default {
     CoreToolbar: () => import('@/components/core/Toolbar'),
     CoreView: () => import('@/components/core/View')
   },
-  created () {
-    const peopleList = localStorage.getItem('peopleList')
-
-    if (!peopleList) {
-      const { VUE_APP_BASE_URL } = process.env
-      let url = `${VUE_APP_BASE_URL}/api/people/?page=1`
-
-      this.loadData(url)
-    } else {
-      this.createStore(JSON.parse(peopleList))
-    }
-  },
+  computed: { ...mapGetters(['people', 'films', 'species', 'starships', 'vehicles', 'planets']) },
   methods: {
-    ...mapActions(['createStore']),
-    loadData (url) {
-      window.axios
-        .get(url)
+    ...mapMutations(['setPeople', 'setFilms', 'setSpecies', 'setStarships', 'setVehicles', 'setPlanets']),
+    loadDataRecursive (url, action, oldValues, nameLocalStorage) {
+      const data = localStorage.getItem(nameLocalStorage)
+
+      if (data) {
+        return action(JSON.parse(data))
+      }
+
+      window.axios.get(url)
         .then((response) => response.data)
-        .then((people) => {
-          this.createStore(people.results)
+        .then((result) => {
+          const newValues = [...oldValues, ...result.results]
+          action(newValues)
 
-          if (people.next) {
-            this.loadData(people.next)
+          if (result.next !== null) {
+            this.loadDataRecursive(result.next, action, newValues, nameLocalStorage)
           } else {
-            const peopleList = this.$store.getters.peopleList
-
-            localStorage.clear()
-            localStorage.setItem('peopleList', JSON.stringify(peopleList))
+            localStorage.removeItem(nameLocalStorage)
+            localStorage.setItem(nameLocalStorage, JSON.stringify(newValues))
           }
         })
-        .catch((err) => {
-          console.log('Error:', err)
-          this.$swal({
-            type: 'error',
-            title: 'Oops...',
-            text: 'Ocorreu um erro, tente novamente mais tarde!'
-          })
-        })
     }
+  },
+  created () {
+    const { VUE_APP_BASE_URL } = process.env
+
+    this.loadDataRecursive(`${VUE_APP_BASE_URL}/api/planets/?page=1`, this.setPlanets, this.planets, 'planets')
+    this.loadDataRecursive(`${VUE_APP_BASE_URL}/api/people/?page=1`, this.setPeople, this.people, 'people')
+    this.loadDataRecursive(`${VUE_APP_BASE_URL}/api/films/?page=1`, this.setFilms, this.films, 'films')
+    this.loadDataRecursive(`${VUE_APP_BASE_URL}/api/species/?page=1`, this.setSpecies, this.species, 'species')
+    this.loadDataRecursive(`${VUE_APP_BASE_URL}/api/starships/?page=1`, this.setStarships, this.starships, 'starships')
+    this.loadDataRecursive(`${VUE_APP_BASE_URL}/api/vehicles/?page=1`, this.setVehicles, this.vehicles, 'vehicles')
   }
 }
 </script>

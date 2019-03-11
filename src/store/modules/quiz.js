@@ -25,21 +25,45 @@ const mutations = {
 const actions = {
   startQuiz ({ commit, rootState }) {
     const peopleJson = require('@/data/people.json')
-    const { peopleList } = rootState
+    const {
+      people,
+      films,
+      species,
+      starships,
+      vehicles,
+      planets
+    } = rootState
     const points = 10
     const answer = null
     const rightAnswer = null
 
-    commit('setQuestions', peopleList.map(person => {
+    commit('setQuestions', people.map(person => {
       let urlImg = peopleJson.find(personJson => personJson.name === person.name)
+
+      const newfilms = person.films.map((personfilm) => films.find((film) => film.url === personfilm))
+      const newspecies = person.species.map((personspecie) => species.find((specie) => specie.url === personspecie))
+      const newstarships = person.starships.map((personstarship) => starships.find((starship) => starship.url === personstarship))
+      const newvehicles = person.vehicles.map((personvehicle) => vehicles.find((vehicle) => vehicle.url === personvehicle))
+      const newhomeworld = planets.find((planet) => planet.url === person.homeworld).name
 
       if (urlImg) {
         urlImg = require(`@/assets/images/${urlImg.pathImg}`)
       } else {
-        console.log(person.name)
+        console.warn('URL IMG NOT FOUNT FOR PERSON:', person.name)
       }
 
-      return ({ ...person, points, answer, urlImg, rightAnswer })
+      return ({
+        ...person,
+        points,
+        answer,
+        urlImg,
+        rightAnswer,
+        films: newfilms,
+        species: newspecies,
+        starships: newstarships,
+        vehicles: newvehicles,
+        homeworld: newhomeworld
+      })
     }))
     commit('setModalPersonHelp', null)
     commit('setPagination', { page: 1, limit: 8 })

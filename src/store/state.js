@@ -1,3 +1,8 @@
 export default {
-  peopleList: []
+  people: [],
+  films: [],
+  species: [],
+  starships: [],
+  vehicles: [],
+  planets: []
 }

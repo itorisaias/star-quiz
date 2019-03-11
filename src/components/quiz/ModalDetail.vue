@@ -22,7 +22,7 @@
             <ul>
               <li>
                 <strong>Specie: </strong>
-                {{ person.species }}
+                {{ person.species.map((specie) => specie.name).join(', ') || 'n/a' }}
               </li>
               <li>
                 <strong>Height: </strong>
@@ -41,13 +41,13 @@
           <v-flex xs12>
             <p>
               <strong>filmes: </strong>
-              {{ person.films }}
+              {{ person.films.map((film) => film.title).join(', ') || 'n/a' }}
             </p>
           </v-flex>
           <v-flex xs12>
             <p>
               <strong>veiculos: </strong>
-              {{ person.vehicles }}
+              {{ person.vehicles.map((vehicle) => vehicle.name).join(', ') || 'n/a' }}
             </p>
           </v-flex>
         </v-layout>
