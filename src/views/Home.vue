@@ -14,6 +14,7 @@
 
       <v-flex>
         <v-btn large dark class="yellow--text" to="/playing">JOGAR</v-btn>
+        <v-btn large dark class="yellow--text" to="/ranking">RANKING</v-btn>
       </v-flex>
 
     </v-layout>

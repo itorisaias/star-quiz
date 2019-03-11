@@ -27,7 +27,7 @@
     </v-data-table>
 
     <v-card-actions>
-      <v-btn to="/playing">JOGAR NOVAMENTE</v-btn>
+      <v-btn v-if="showBtnPlayning" to="/playing">JOGAR NOVAMENTE</v-btn>
       <v-btn to="/">INICIO</v-btn>
     </v-card-actions>
 
@@ -39,6 +39,7 @@ import { mapGetters } from 'vuex'
 
 export default {
   data: () => ({
+    showBtnPlayning: false,
     search: null,
     pagination: {
       sortBy: 'totalPoints',
@@ -54,6 +55,13 @@ export default {
   }),
   computed: {
     ...mapGetters('ranking', ['plays'])
+  },
+  created () {
+    const { finished } = this.$route.query
+
+    if (finished !== undefined) {
+      this.showBtnPlayning = true
+    }
   }
 }
 </script>
