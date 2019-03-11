@@ -9,12 +9,14 @@
       <v-text-field
         v-model="answer"
         color="black"
-        label="Nome"
-        append-outer-icon="help_outline"
-        @click:append-outer="showDetail(person)"
+        placeholder="Quem sou eu ?"
         clearable
         @blur="response({ answer, person })"
-      />
+      >
+        <template v-slot:append-outer>
+          <v-icon title="Detalhes" @click="showDetail(person)">help_outline</v-icon>
+        </template>
+      </v-text-field>
     </v-card-actions>
   </v-card>
 </template>
