@@ -33,7 +33,11 @@ export default {
     ...mapActions('quiz', ['paginationQuestion', 'startQuiz'])
   },
   created () {
-    this.startQuiz()
+    if (localStorage.getItem('people')) {
+      this.startQuiz()
+    } else {
+      this.$router.push('/')
+    }
   },
   computed: {
     ...mapGetters(['people']),
