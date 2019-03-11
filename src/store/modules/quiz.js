@@ -47,7 +47,7 @@ const actions = {
       const newhomeworld = planets.find((planet) => planet.url === person.homeworld).name
 
       if (urlImg) {
-        urlImg = require(`@/assets/images/${urlImg.pathImg}`)
+        urlImg = require(`@/assets/images/people/${urlImg.pathImg}`)
       } else {
         console.warn('URL IMG NOT FOUNT FOR PERSON:', person.name)
       }
