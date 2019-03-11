@@ -1,5 +1,7 @@
 # Star Quiz - Invillia
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4670fa80-d119-4f48-ad9f-602487be43b4/deploy-status)](https://app.netlify.com/sites/serene-lumiere-9dc6be/deploys)
+
 ## Requisitos
 
 - [Nodejs && NPM](https://nodejs.org/)
