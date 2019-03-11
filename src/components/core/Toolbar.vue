@@ -1,6 +1,8 @@
 <template>
   <v-toolbar app dense dark>
-    <v-toolbar-title>{{ title }}</v-toolbar-title>
+    <v-toolbar-title>
+      <span class="starWars-2">{{ title }}</span>
+    </v-toolbar-title>
 
     <v-spacer></v-spacer>
 
@@ -16,7 +18,7 @@
 export default {
   data: () => ({
     urlRepository: 'https://github.com/itorisaias/star-quiz',
-    title: 'Star Quiz - Invillia'
+    title: 'star quiz - invillia'
   })
 }
 </script>

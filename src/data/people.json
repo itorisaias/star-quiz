@@ -24,10 +24,6 @@
         "pathImg": "bossk.jpeg"
     },
     {
-        "name": "Lando Calrissian",
-        "pathImg": "ajudante-de-lando.jpeg"
-    },
-    {
         "name": "Jek Tono Porkins",
         "pathImg": "jek-tono-porkins.jpg"
     },
@@ -319,8 +315,7 @@
         "pathImg": "conde-dooku.jpeg"
     },
     {
-        "notFount": true,
-        "name": "lando-calrissian",
+        "name": "Lando Calrissian",
         "pathImg": "lando-calrissian.jpeg"
     },
     {

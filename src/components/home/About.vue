@@ -1,9 +1,16 @@
 <template>
-  <p>
-    <strong>Star Quiz</strong> é um quiz sobre a serie de filmes do
-    <a href="https://www.starwars.com/">
-      Star Wars
-    </a>
-    aonde você tem que acertar qual é o nome do personagem.
-  </p>
+  <div>
+    <h1 class="starWars">Star quiz !</h1>
+    <p>
+      Um quiz sobre a série de filmes de <a class="noUnderline blue--text" :href="urlStarWars">Star Wars</a> aonde você deverá acertar o maior números de nomes dos personagens.
+    </p>
+  </div>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    urlStarWars: 'https://www.starwars.com'
+  })
+}
+</script>
