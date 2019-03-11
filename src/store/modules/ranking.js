@@ -11,6 +11,8 @@ const mutations = {
 const actions = {
   recorderPlay ({ commit, state }, { totalPoints, countOfQuestion, email, username }) {
     const newPlay = { totalPoints, countOfQuestion, email, username }
+    localStorage.removeItem('plays')
+    localStorage.setItem('plays', JSON.stringify([ ...state.plays, newPlay ]))
     commit('setPlays', [ ...state.plays, newPlay ])
   }
 }
