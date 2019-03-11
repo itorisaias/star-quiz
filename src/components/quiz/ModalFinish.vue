@@ -57,7 +57,7 @@ export default {
       const { totalPoints, countOfQuestion } = this.finalResult
       const { username, email } = this
       this.recorderPlay({ totalPoints, countOfQuestion, email, username })
-      this.$router.push('/ranking')
+      this.$router.push('/ranking?finished')
     }
   }
 }
